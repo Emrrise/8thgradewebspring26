@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emir | JS DEMO</title>
+    <link rel="stylesheet" href="C:\Users\ealaqqad\OneDrive - Eastside Preparatory School\Desktop\web class\js_demo\css\stlye.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1> today we will learn about javascript</h1>
+    <h2>how do we onclick events?</h2>
+    <p>click <a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Warning you\'re navigating away from my website. are you sure you want to leave?'); alert('If you leave, the cookie monster is gonna eat your cookies!')"> here</a> to navigate to my school website. </p>
+    
+    <h2> we can also use JS to do math</h2>
+    <p>whats is 2+2</p>
+    <button onclick="document.getElementById('add').innerHTML=2+2">click to find the answer</button>
+    <p id="add"></p>
+
+    <h2> we can also add the date and time.</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click to find the date and time</button>
+    <p id="date"></p>
+    <h2> lets change text with JS</h2>
+    <button onclick="document.getElementById('text').innerHTML='you changed it!'">click to change text</button>
+    <p id="text"></p>
+
+    <h2> how do we make a function with JS</h2>
+    <p> lets use a function to add an image to our page</p>
+    <button onclick="showImage()">click me for a surprise!</button>
+    <img id="surpise" src="" width="500px">
+
+    <h2> how do we return user data?</h2>
+    <button onclick="askName()">click me to enter your name</button>
+    <p id="ask-name"></p>
+
+    <h2> how do we ask other questions with JS?</h2>
+    <button onclick="askQuestion()">click here for the question of no ages</button>
+    <p id="ask-question"></p>
+
+    <script>
+        function showImg() {
+            var image = document.getElementById('surpise');
+            image.src= 'images/surpise.png';
+        }
+
+       // alert('hello world');
+        // alert('how is you today');
+        // alert('i hope you are doing well');
+        // alert('lets start learning javascript');
+    </script>
+
+</body>
+</html>

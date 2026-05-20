@@ -1,0 +1,26 @@
+body { 
+            background-color: lightgreen
+        }
+
+.container {
+    width : 1000px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 50px;
+    background-color:aliceblue
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+    
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.copy {
+    text-align: center;
+    color: red
+}
